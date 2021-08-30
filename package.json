@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "core-js": "^3.15.1",
+    "dayjs": "^1.10.6",
+    "kurimudb-zero-config": "^4.0.0",
+    "leancloud-storage": "^4.11.1",
     "nuxt": "^2.15.7"
-  },
-  "devDependencies": {}
+  }
 }
