@@ -1,10 +1,13 @@
 export default {
+  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
+  ssr: false,
+
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'www.virts.app',
+    title: 'Virts App',
     htmlAttrs: {
       lang: 'en'
     },
@@ -19,69 +22,55 @@ export default {
         hid: 'description',
         name: 'description',
         content: ''
-      },
-      {
-        name: 'format-detection',
-        content: 'telephone=no'
       }
     ],
     link: [{
       rel: 'icon',
       type: 'image/x-icon',
       href: '/favicon.ico'
-    }],
-    script: [{
-        src: '/js/jquery.min.js',
-      },
-      {
-        src: '/js/jquery.scrollex.min.js',
-      },
-      {
-        src: '/js/jquery.scrolly.min.js',
-      },
-      {
-        src: '/js/browser.min.js',
-      },
-      {
-        src: '/js/breakpoints.min.js',
-      },
-      {
-        src: '/js/util.js',
-      },
-      {
-        src: '/js/main.js',
-        async: true,
-        defer: true,
-        body: true
-      },
-    ]
+    }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    'element-ui/lib/theme-chalk/index.css',
+    '@/assets/css/dark.css',
+    '@/assets/css/light.css',
     '@/assets/css/main.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{
-    src: '@/plugins/leancloud',
-    mode: 'client'
-  }, {
-    src: '@/plugins/kurimudb',
-    mode: 'client'
-  }, ],
+  plugins: [
+    '@/plugins/element-ui'
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
+  buildModules: ['@nuxtjs/color-mode'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: ['kurimudb-zero-config'],
+    transpile: [/^element-ui/],
   },
+  router: {
+    // base: './'
+  },
+  // generate: {
+  //   dir: 'docs'
+  // },
+  colorMode: {
+    preference: 'system', // default value of $colorMode.preference
+    fallback: 'dark', // fallback value if not system preference found
+    hid: 'nuxt-color-mode-script',
+    globalName: '__NUXT_COLOR_MODE__',
+    componentName: 'ColorScheme',
+    classPrefix: '',
+    classSuffix: '-mode',
+    storageKey: 'nuxt-color-mode'
+  }
 }

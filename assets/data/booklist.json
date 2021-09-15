@@ -1,0 +1,63 @@
+[{
+  "category": "效率",
+  "books": [{
+    "name": "团队协作",
+    "date": "office.virts.app",
+    "url": "https://office.virts.app",
+    "isBlock": false
+  },{
+    "name": "云盘",
+    "date": "cloud.virts.app",
+    "url": "https://cloud.virts.app",
+    "isBlock": false
+  },{
+    "name": "RssHub订阅",
+    "date": "rsshub.virts.app",
+    "url": "https://rsshub.virts.app",
+    "isBlock": false
+  },{
+    "name": "书签管理",
+    "date": "shiori.virts.app",
+    "url": "https://shiori.virts.app",
+    "isBlock": false
+  },{
+    "name": "短链接",
+    "date": "shortlink.virts.app",
+    "url": "https://shortlink.virts.app",
+    "isBlock": false
+  }]
+}, {
+  "category": "项目",
+  "books": [{
+    "name": "句子",
+    "date": "sentence.virts.app",
+    "url": "https://sentence.virts.app",
+    "isBlock": false
+  }, {
+    "name": "安全工具",
+    "date": "2020-1-1",
+    "url": "math",
+    "isBlock": true
+  }]
+}, {
+  "category": "文章",
+  "books": [{
+    "name": "学习笔记",
+    "date": "doc.virts.app",
+    "url": "http://doc.virts.app",
+    "isBlock": false
+  }, {
+    "name": "项目文档",
+    "date": "rssdoc.virts.app",
+    "url": "http://rssdoc.virts.app",
+    "isBlock": true
+  }]
+}, {
+  "category": "杂项",
+  "books": [{
+    "name": "文章发布",
+    "date": "doc.virts.app",
+    "url": "http://doc.virts.app",
+    "isBlock": true
+  }]
+}]
