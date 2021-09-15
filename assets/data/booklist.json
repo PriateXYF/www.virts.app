@@ -55,9 +55,9 @@
 }, {
   "category": "杂项",
   "books": [{
-    "name": "文章发布",
-    "date": "doc.virts.app",
-    "url": "http://doc.virts.app",
-    "isBlock": true
+    "name": "论坛",
+    "date": "forum.virts.app",
+    "url": "https://forum.virts.app",
+    "isBlock": false
   }]
 }]
