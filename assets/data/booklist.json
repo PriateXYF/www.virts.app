@@ -59,5 +59,10 @@
     "date": "forum.virts.app",
     "url": "https://forum.virts.app",
     "isBlock": false
+  }, {
+    "name": "团队",
+    "date": "team.virts.app",
+    "url": "https://team.virts.app",
+    "isBlock": false
   }]
 }]
