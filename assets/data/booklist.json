@@ -25,6 +25,11 @@
     "date": "shortlink.virts.app",
     "url": "https://shortlink.virts.app",
     "isBlock": false
+  },{
+    "name": "消息推送",
+    "date": "bark.virts.app",
+    "url": "https://bark.virts.app",
+    "isBlock": false
   }]
 }, {
   "category": "项目",
