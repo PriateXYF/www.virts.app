@@ -1,0 +1,65 @@
+---
+# Additionnal page configuration
+
+# Additionnal configurations are loaded using its file name, minus the extension, as an anchor (https://<mydashboad>#<config>). 
+# `config.yml` is still used as a base configuration, and all values here will overwrite it, so you don't have to re-defined everything
+
+
+subtitle: "兵器库"
+
+# This overwrites message config. Setting it to empty to remove message from this page and keep it only in the main one:
+message: ~
+
+# as we want to include a differente link here (so we can get back to home page), we need to replicate all links or they will be revome when overwriting the links field:
+links:
+  - name: "工具栏"
+    icon: "fa fa-layer-group"
+    url: "#Tool"
+  - name: "小项目"
+    icon: "fa fa-lightbulb"
+    url: "#Project"
+    # target: "_blank"
+  - name: "兵器库"
+    icon: "fas fa-skull"
+    url: "#Arsenal" 
+
+services:
+  - name: "风林火山系列"
+    icon: "fas fa-yin-yang"
+    items:
+      - name: "风"
+        logo: "assets/logos/feng.png"
+        subtitle: "其疾如风"
+        tag: "arsenal"
+        url: "#"
+        # target: "_blank"
+      - name: "林"
+        logo: "assets/tools/sample.png"
+        subtitle: "其徐如林"
+        tag: "arsenal"
+        url: "#"
+        # target: "_blank"
+      - name: "火"
+        logo: "assets/tools/sample.png"
+        subtitle: "侵掠如火"
+        tag: "arsenal"
+        url: "#"
+        # target: "_blank"
+      - name: "山"
+        logo: "assets/logos/shan.png"
+        subtitle: "不动如山"
+        tag: "arsenal"
+        url: "#"
+        # target: "_blank"
+      - name: "阴"
+        logo: "assets/tools/sample.png"
+        subtitle: "难知如阴"
+        tag: "arsenal"
+        url: "#"
+        # target: "_blank"
+      - name: "雷"
+        logo: "assets/tools/sample.png"
+        subtitle: "动如雷霆"
+        tag: "arsenal"
+        url: "#"
+        # target: "_blank"
