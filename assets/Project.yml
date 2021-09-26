@@ -30,6 +30,6 @@ services:
       - name: "句子"
         logo: "assets/logos/setence.png"
         subtitle: "要变得优秀，堵住那些悠悠众口。"
-        tag: "鸡汤"
+        tag: "Virts"
         url: "https://sentence.virts.app"
         target: "_blank"
